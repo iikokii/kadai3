@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>じゃんけん</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>じゃんけん</h1>
+
+        <div class="board"> 
+            <div class="panel player">
+                <h2>You</h2>
+                <div class="handWrapper">
+
+                    <button id="rock" class ="hand rock" onClick="onHandClick(this)">Rock</button>
+                    <button id="paper"class="hand paper" onClick="onHandClick(this)">Paper</button>
+                    <button id="scissors" class="hand scissors" onClick="onHandClick(this)">Scissors</button>
+                </div>
+            </div>
+
+            <div class="panel computer">
+                <h2>Computer</h2>
+                <div id="computerHand" class="handWrapper">?</div>
+            </div>
+        </div>
+
+        <div class ="controller">
+            <div id="outcome" class="outcome">Result</div>
+            <button class="reset" onClick="reset()">RESET</button>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/janken.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</body>
+</html>
